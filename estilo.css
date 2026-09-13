@@ -1,0 +1,35 @@
+:root{
+  --fondo:#0d2233;
+  --panel:#13304a;
+  --texto:#e9eff5;
+  --suave:#9db2c6;
+  --azul:#38b6ff;
+  --rojo:#e8433c;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--fondo);
+  color:var(--texto);
+  font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+.marco{max-width:760px;margin:0 auto;padding:48px 20px 72px}
+header.cabecera{display:flex;align-items:center;gap:14px;margin-bottom:40px}
+.logo{
+  width:56px;height:56px;border-radius:14px;background:var(--panel);
+  display:flex;align-items:center;justify-content:center;
+  font-weight:800;font-size:20px;letter-spacing:-.5px;flex:none;
+}
+.logo .f{color:#fff}.logo .t{color:var(--azul)}.logo .v{color:var(--rojo)}
+.marca{font-weight:700;font-size:19px;letter-spacing:.2px}
+.marca small{display:block;font-weight:400;font-size:13px;color:var(--suave)}
+h1{font-size:30px;line-height:1.25;margin:0 0 8px}
+h2{font-size:19px;margin:36px 0 10px}
+p,li{color:#d4dfe9}
+a{color:var(--azul)}
+.suave{color:var(--suave)}
+.tarjeta{background:var(--panel);border-radius:14px;padding:22px 24px;margin:24px 0}
+nav.pie{margin-top:56px;padding-top:22px;border-top:1px solid rgba(255,255,255,.12);font-size:14px;color:var(--suave)}
+nav.pie a{margin-right:18px}
+.fecha{font-size:14px;color:var(--suave);margin-bottom:28px}
+@media (max-width:480px){.marco{padding:32px 16px 56px}h1{font-size:25px}}
